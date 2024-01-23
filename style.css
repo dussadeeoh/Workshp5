@@ -1,0 +1,75 @@
+/* reset ค่าหน้าเว็บ */ /* กำหนดการแสดงผล display การให้ element แสดงผล*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between; /* border: 1px solid red; กด ctrl+/*/
+        padding: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* เข้าถึง class mene เพื่อให้ item ต่อกันแบบแนวนอน */
+.menu{
+    display: flex;
+    list-style: none;
+}
+/* เข้าถึง menu li */
+.menu li{
+    margin-left: 10px; /* ระยะห่างภายนอกด้านซ้าย */
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(2, 26, 26);
+}
+/* กำหนด element ให้อยู่ตรงกลาง */
+.banner{
+    background-color: rgb(2, 54, 37);
+    color: beige;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner hi{
+    margin-top: 20px;
+}
+.banner-info{
+    text-align: center;
+}
+/* ปรับขนาดรูปภาพ banner */
+.banner-info img{
+    width: 300px;
+    border-radius: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/* กำหนด 3 columns */
+}
+
+main div{
+    padding: 20px;
+}
+
+main div p{
+    margin-top: 10px;
+}
+
+main img{
+    width: 100%; /* แสดงในกล่องเต็ม100% */
+    border-radius: 20px;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
